@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoClientes.BuildingBloc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoClientes.Infrastructure", "Backend\Infrastructure\GestaoClientes.Infrastructure\GestaoClientes.Infrastructure.csproj", "{148346B8-C76B-47C5-BC28-04510E0A879C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoClientes.WebApi", "Backend\WebApi\GestaoClientes.WebApi\GestaoClientes.WebApi.csproj", "{9869BE47-CA1D-43D3-B831-F3494CFCFB47}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{148346B8-C76B-47C5-BC28-04510E0A879C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{148346B8-C76B-47C5-BC28-04510E0A879C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{148346B8-C76B-47C5-BC28-04510E0A879C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9869BE47-CA1D-43D3-B831-F3494CFCFB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9869BE47-CA1D-43D3-B831-F3494CFCFB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9869BE47-CA1D-43D3-B831-F3494CFCFB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9869BE47-CA1D-43D3-B831-F3494CFCFB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +57,7 @@ Global
 		{B23C75D7-9CF2-481A-A2AF-2AC443DDE1F5} = {4A335342-05E9-4FC6-871C-B4858D3DB5F1}
 		{3A77F7B5-09F0-4604-8031-8BAAA9BEADE3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{148346B8-C76B-47C5-BC28-04510E0A879C} = {228B51E0-6AC0-4F67-A5B2-72FCBAA2E676}
+		{9869BE47-CA1D-43D3-B831-F3494CFCFB47} = {94256F2E-DC91-4E7B-9B9B-C839E4FDA8B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4FA7C38-964E-466B-BA9C-DB1638E0FED4}

@@ -1,0 +1,9 @@
+services:
+  gestaoclientes.webapi:
+    image: ${DOCKER_REGISTRY-}gestaoclienteswebapi
+    build:
+      context: .
+      dockerfile: Backend/WebApi/GestaoClientes.WebApi/Dockerfile
+
+  gestaoclientes.db:
+    image: mcr.microsoft.com/mssql/server:2022-latest

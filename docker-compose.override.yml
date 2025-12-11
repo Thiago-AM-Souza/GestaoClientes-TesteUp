@@ -1,0 +1,23 @@
+services:
+  gestaoclientes.webapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ConnectionStrings__DefaultConnection=Server=gestaoclientes.db;Database=GestaoClientes;User Id=sa;Password=Senh@Segur4;Encrypt=False;TrustServerCertificate=True;
+    ports:
+      - "8080"
+
+  gestaoclientes.db:
+    container_name: gestaoclientes-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Senh@Segur4"
+    ports:
+      - "1433:1433"
+    restart: unless-stopped
+    volumes:
+      - gestaoclientes_data:/var/opt/mssql
+
+volumes:
+  gestaoclientes_data:
