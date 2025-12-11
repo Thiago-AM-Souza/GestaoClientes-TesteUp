@@ -4,6 +4,7 @@
 
     public enum ErrorType
     {
-        Validation
+        Validation,
+        BusinessRule,
     }
 }

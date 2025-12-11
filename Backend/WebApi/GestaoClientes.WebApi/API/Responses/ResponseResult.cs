@@ -9,6 +9,7 @@ namespace GestaoClientes.WebApi.API.Responses
             return appError.ErrorType switch
             {
                 ErrorType.Validation => Results.BadRequest(new { error = appError.ErrorType.ToString(), details = appError.Details }),
+                ErrorType.BusinessRule => Results.Conflict(new { error = appError.ErrorType.ToString(), details = appError.Details }),
                 _ => Results.InternalServerError("Erro interno no servidor")
             };
         }

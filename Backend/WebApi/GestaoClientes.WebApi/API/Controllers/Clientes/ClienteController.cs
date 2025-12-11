@@ -8,6 +8,7 @@ namespace GestaoClientes.WebApi.API.Controllers.Clientes
     [ApiController]
     [Produces("application/json")]
     [Route("api/[controller]")]
+    [EndpointGroupName("Clientes")]
     public class ClienteController : ControllerBase
     {
         [HttpPost]

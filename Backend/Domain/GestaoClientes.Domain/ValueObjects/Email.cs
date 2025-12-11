@@ -5,12 +5,14 @@ namespace GestaoClientes.Domain.ValueObjects
 {
     public class Email
     {
-        public string Valor { get; }
+        public string Valor { get; } = default!;
 
         private Email(string email)
         {
             Valor = email;
         }
+
+        protected Email() { }
 
         public static OneOf<Email, AppError> Criar(string email)
         {

@@ -10,17 +10,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Application\GestaoClientes.Application\GestaoClientes.Application.csproj" />
     <ProjectReference Include="..\..\BuildingBlocks\GestaoClientes.BuildingBlocks\GestaoClientes.BuildingBlocks.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="API\Controllers\Clientes\InputModels\" />
-    <Folder Include="API\Controllers\Clientes\ViewModels\" />
+    <ProjectReference Include="..\..\Infrastructure\GestaoClientes.Infrastructure\GestaoClientes.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

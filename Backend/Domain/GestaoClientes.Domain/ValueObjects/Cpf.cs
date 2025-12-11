@@ -4,12 +4,14 @@ namespace GestaoClientes.Domain.ValueObjects
 {
     public class Cpf
     {
-        public string Valor { get; set; }
+        public string Valor { get; set; } = default!;
 
         private Cpf(string cpf) 
         { 
             Valor = cpf;
         }
+
+        protected Cpf() { }
 
         public static OneOf<Cpf, AppError> Criar(string cpf)
         {
