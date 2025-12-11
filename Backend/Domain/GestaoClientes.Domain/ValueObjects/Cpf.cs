@@ -13,6 +13,9 @@ namespace GestaoClientes.Domain.ValueObjects
 
         public static OneOf<Cpf, AppError> Criar(string cpf)
         {
+            cpf = cpf.Trim();
+            cpf = cpf.Replace(".", "").Replace("-", "");
+
             if (!ValidarCpf(cpf))
             {
                 return new CpfValidation("Cpf inválido.");
