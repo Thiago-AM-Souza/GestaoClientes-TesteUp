@@ -1,6 +1,4 @@
-﻿
-
-using GestaoClientes.BuildingBlocks.Core.Errors;
+﻿using GestaoClientes.Domain.DomainErrors;
 using System.Text.RegularExpressions;
 
 namespace GestaoClientes.Domain.ValueObjects
@@ -22,7 +20,7 @@ namespace GestaoClientes.Domain.ValueObjects
 
             if (!valido)
             {
-                //return
+                return new EmailValidation("Email inválido.");
             }
 
             return new Email(email);

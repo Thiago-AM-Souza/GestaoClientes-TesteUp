@@ -10,6 +10,7 @@ namespace GestaoClientes.Domain.Clientes
 
         private List<Telefone> _telefones = new();
         public IReadOnlyList<Telefone> Telefones => _telefones;
+        public bool Ativo { get; private set; }
 
         protected Cliente() { }
 
@@ -20,6 +21,24 @@ namespace GestaoClientes.Domain.Clientes
             Nome = nome;
             Cpf = cpf;
             Email = email;
+            Ativo = true;
         }
+
+        public void AdicionarTelefone(Telefone telefone)
+        {
+            if (!_telefones.Contains(telefone))
+            {
+                _telefones.Add(telefone);
+            }
+        }
+
+        public void RemoverTelefone(Telefone telefone)
+        {
+            _telefones.Remove(telefone);
+        }
+
+        public void Ativar() => Ativo = true;
+
+        public void Desativar() => Ativo = false;
     }
 }
