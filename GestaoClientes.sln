@@ -21,8 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoClientes.Infrastructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoClientes.WebApi", "Backend\WebApi\GestaoClientes.WebApi\GestaoClientes.WebApi.csproj", "{9869BE47-CA1D-43D3-B831-F3494CFCFB47}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoClientes.Application", "Backend\Application\GestaoClientes.Application\GestaoClientes.Application.csproj", "{8062E54C-01EC-4BA0-8866-277DF06FF8AA}"
 EndProject
 Global
@@ -47,10 +45,6 @@ Global
 		{9869BE47-CA1D-43D3-B831-F3494CFCFB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9869BE47-CA1D-43D3-B831-F3494CFCFB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9869BE47-CA1D-43D3-B831-F3494CFCFB47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8062E54C-01EC-4BA0-8866-277DF06FF8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8062E54C-01EC-4BA0-8866-277DF06FF8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8062E54C-01EC-4BA0-8866-277DF06FF8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU

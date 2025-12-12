@@ -8,6 +8,8 @@ builder.Services.AddApiBootstrapper(builder.Configuration);
 
 var app = builder.Build();
 
+app.UseCors("AllowAll");
+
 app.MapControllers();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
