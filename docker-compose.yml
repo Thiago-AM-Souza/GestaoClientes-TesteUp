@@ -5,5 +5,10 @@ services:
       context: .
       dockerfile: Backend/WebApi/GestaoClientes.WebApi/Dockerfile
 
+  frontend:
+    build:
+      context: .
+      dockerfile: Frontend/gestao-clientes/Dockerfile
+
   gestaoclientes.db:
     image: mcr.microsoft.com/mssql/server:2022-latest
