@@ -85,7 +85,6 @@ const ClienteDetails: React.FC = () => {
   return (
     <div className='container mt-4'>
 
-      {/* Título */}
       <div className='d-flex justify-content-between align-items-center'>
         <h2>Detalhes do Cliente</h2>
 

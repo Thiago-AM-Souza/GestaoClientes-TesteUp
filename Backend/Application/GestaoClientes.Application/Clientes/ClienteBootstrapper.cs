@@ -12,14 +12,11 @@ namespace GestaoClientes.Application.Clientes
     {
         public static IServiceCollection AddClienteModule(this IServiceCollection services)
         {
-            // Commands
             services.AddScoped<CreateClienteHandler>();
             services.AddScoped<UpdateClienteHandler>();
             services.AddScoped<DeleteClienteHandler>();
             services.AddScoped<StatusClienteAtivarHandler>();
             services.AddScoped<StatusClienteDesativarHandler>();
-
-            // Queries
             services.AddScoped<GetClienteByIdHandler>();
             services.AddScoped<GetClientesHandler>();
 
