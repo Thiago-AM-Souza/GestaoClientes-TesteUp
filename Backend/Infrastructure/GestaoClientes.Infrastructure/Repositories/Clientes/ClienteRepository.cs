@@ -16,15 +16,18 @@ namespace GestaoClientes.Infrastructure.Repositories.Clientes
 
         public async Task CreateCliente(Cliente cliente)
         {
-            try
-            {
-                await _context.Clientes.AddAsync(cliente);
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception)
-            {
+            await _context.Clientes.AddAsync(cliente);
+            await _context.SaveChangesAsync();
+        }
 
-            }
+        public async Task<List<Cliente>> GetAll()
+        {
+            var clientes = new List<Cliente>();
+
+            clientes = await _context.Clientes
+                                     .ToListAsync();
+
+            return clientes;
         }
 
         public async Task<Cliente?> GetClienteByEmail(string email)
@@ -34,6 +37,20 @@ namespace GestaoClientes.Infrastructure.Repositories.Clientes
                                         .FirstOrDefaultAsync();
 
             return usuario;
+        }
+
+        public async Task<Cliente?> GetClienteById(Guid id)
+        {
+            var usuario = await _context.Clientes
+                                        .FindAsync(id);
+
+            return usuario;
+        }
+
+        public async Task UpdateCliente(Cliente cliente)
+        {
+            _context.Clientes.Update(cliente);
+            await _context.SaveChangesAsync();
         }
     }
 }

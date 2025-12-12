@@ -6,5 +6,6 @@
     {
         Validation,
         BusinessRule,
+        NotFound
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace GestaoClientes.Application.Clientes.Commands.Update
 {
-    internal class UpdateClienteCommand
-    {
-    }
+    public record UpdateClienteCommand(string Nome,
+                                       string Email,
+                                       string Cpf);
 }

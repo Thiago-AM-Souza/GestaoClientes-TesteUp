@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GestaoClientes.Application.Clientes.Queries.GetById
+﻿namespace GestaoClientes.Application.Clientes.Queries.GetById
 {
-    internal class GetClienteByIdQuery
-    {
-    }
+    public record GetClienteByIdQuery(Guid Id);
 }

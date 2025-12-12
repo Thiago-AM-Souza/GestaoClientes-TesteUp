@@ -40,5 +40,14 @@ namespace GestaoClientes.Domain.Clientes
         public void Ativar() => Ativo = true;
 
         public void Desativar() => Ativo = false;
+
+        public void Alterar(string nome,
+                            Cpf cpf,
+                            Email email)
+        {
+            Nome = nome;
+            Cpf = cpf;
+            Email = email;
+        }
     }
 }
